@@ -199,6 +199,7 @@ section.perfil .texto-perfil p{
 /************************/
 /* Começa aqui o Videos */
 /************************/
+
 section.videos{
 	padding: 50px 0;
 }
@@ -240,7 +241,6 @@ section.tratamentos .container > h2{
 	margin-bottom: 16px;
 	font-size: 22px;
 	text-transform: uppercase;
-
 }
 
 .tratamento-single{
@@ -257,6 +257,54 @@ section.tratamentos .container > h2{
 	font-size: 13px;
 	color: #b4b4b4;
 }
+
+/*****************************/
+/* Começa aqui o Depoimentos */
+/*****************************/
+
+section.depoimentos .container > h2{
+	color: #698293;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+section.depoimentos > .container{
+	padding: 70px 0;
+	max-width: 400px;
+}
+
+section.depoimentos .depoimento-single{
+	text-align: center;
+	width: 100%;
+}
+
+.depoimento-single quote{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.depoimento-single .autor-depoimento{
+	padding: 8px 0;
+}
+
+.autor-depoimento img{
+	width: 48px;
+	height: 48px;
+	border-radius: 16px;
+}
+
+.autor-depoimento span{
+	position: relative;
+	top: 14px;
+	font-size: 13px;
+	color: #b4b4b4;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
 
 @media screen and (max-width: 768px){
 
@@ -349,5 +397,5 @@ section.tratamentos .container > h2{
 		width: 80%;
 		padding-top: calc(80% * 0.6);
 		border: 5px solid white;
-	}s
+	}
 }
