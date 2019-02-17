@@ -31,16 +31,21 @@ header .logo img{
 	width: 236px;
 }
 
-header nav{
+header nav.menu-mobile{
+	display: none;
 	float: right;
 }
 
-header nav ul{
+header nav.menu-desktop{
+	float: right;
+}
+
+header nav.menu-desktop ul{
 	padding: 8px 0;
 	list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
 
 	float: left;
 	font-size: 14px;
@@ -130,4 +135,114 @@ section.servicos > .container .box-servicos p{
 	font-size: 12px;
 	padding-top: 8px;
 	text-align: justify;
+}
+
+/* Fim do servicos */
+
+
+/*************************/
+/* Começa aqui o perfil  */
+/*************************/
+
+section.perfil .container{
+	max-width: 800px;
+}
+
+section.perfil .perfil-wrapper{
+	padding-top: 60%;
+	position: relative;
+}
+
+section.perfil .perfil-warpper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+section.perfil .img-perfil{
+	width: 40%;
+	height: 100%;
+	background-image: url('../images/img_perfil.png');
+	background-size: 100% 100%;
+}
+
+section.perfil .texto-perfil{
+	width: 60%;
+	padding: 0 30px;
+}
+
+section.perfil .texto-perfil h2{
+	color: #698293;
+	font-size: 18px;
+}
+
+section.perfil .texto-perfil p{
+	color: #4b4b4b;
+	font-size: 14px;
+	text-align: justify;
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 768px){
+
+	header nav.menu-desktop{
+		display: none;
+	}
+	
+	header nav.menu-mobile{
+		display: block;
+	}
+
+	section.servicos > .container{
+		flex-direction: column;
+	}
+
+	section.servicos > .container .box-servicos:nth-of-type(1){
+		width: 90%;
+		max-width: 350px;
+		padding: 30px 4%;
+	}
+
+	section.servicos > .container .box-servicos:nth-of-type(2){
+		width: 94%;
+		max-width: 380px;
+		padding: 40px 4%;
+	}
+
+	section.servicos > .container .box-servicos:nth-of-type(3){
+		width: 90%;
+		max-width: 350px;
+		padding: 30px 4%;
+	}
+
+	section.perfil .perfil-warpper2{
+		/*position: absolute;
+		left: 0;
+		top: 0;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;*/
+		display: inline-block;
+		text-align: center;
+	}
+
+	section.perfil .img-perfil{
+		width: 80%;
+		height: auto;
+		display: inline-block;
+		padding-top: 110%;
+	}
+
+	section.perfil .texto-perfil{
+		display: inline-block;
+		width: 100%;
+		text-align: justify;
+	}
+
 }
