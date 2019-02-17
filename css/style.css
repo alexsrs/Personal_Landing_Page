@@ -79,10 +79,6 @@ header ul a{
 	text-decoration: none;
 }
 
-
-/* Fim do header */
-
-
 /*************************/
 /* Começa aqui o Mosaico */
 /*************************/
@@ -99,12 +95,9 @@ header ul a{
 	border: 3px solid white;
 }
 
-/* Fim do mosaico */
-
-
-/*************************/
+/**************************/
 /* Começa aqui o servicos */
-/*************************/
+/**************************/
 
 section.servicos > .container{
 	max-width: 800px;
@@ -156,9 +149,6 @@ section.servicos > .container .box-servicos p{
 	text-align: justify;
 }
 
-/* Fim do servicos */
-
-
 /*************************/
 /* Começa aqui o perfil  */
 /*************************/
@@ -206,12 +196,9 @@ section.perfil .texto-perfil p{
 	margin-top: 8px;
 }
 
-/* Fim do header */
-
-
-/*************************/
+/************************/
 /* Começa aqui o Videos */
-/*************************/
+/************************/
 section.videos{
 	padding: 50px 0;
 }
@@ -219,12 +206,57 @@ section.videos{
 section.videos .box-video{
 	float: left;
 	width: 33.3%;
-	background-color: green;
+	/*background-color: green;*/
 	padding-top: calc(33.3% * 0.6);
-	border: 2px solid white;
+	border: 5px solid white;
+	position: relative;
+}
+
+section.videos iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*****************************/
+/* Começa aqui o tratamentos */
+/*****************************/
+
+section.tratamentos{
+	background-color: #ffffe6;
+	padding-top: 20px;
+}
+
+section.tratamentos .tratamento-container{
+	float: left;
+	width: 33.3%;
+}
+
+section.tratamentos .container > h2{
+	color: #698293;
+	text-align: center;
+	margin-bottom: 16px;
+	font-size: 22px;
+	text-transform: uppercase;
 
 }
 
+.tratamento-single{
+	padding: 20px;
+}
+
+.tratamento-single h2{
+	font-size: 18px;
+	color: #737373;
+}
+
+.tratamento-single p{
+	padding: 10px 0;
+	font-size: 13px;
+	color: #b4b4b4;
+}
 
 @media screen and (max-width: 768px){
 
@@ -302,4 +334,20 @@ section.videos .box-video{
 		width: 100%;
 		text-align: justify;
 	}
+
+	/****** Responsivo ********/
+	/** Começa aqui o Videos **/
+	/**************************/
+
+	section.videos{
+		text-align: center;
+	}
+
+	section.videos .box-video{
+		float: none;
+		display: inline-block;
+		width: 80%;
+		padding-top: calc(80% * 0.6);
+		border: 5px solid white;
+	}s
 }
