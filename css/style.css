@@ -91,7 +91,7 @@ header ul a{
 .img-mosaico-single{
 	width: 100%;
 	padding-top: 100%;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
 	border: 3px solid white;
 }
 
@@ -304,6 +304,151 @@ section.depoimentos .depoimento-single{
 	vertical-align: top;
 }
 
+/*****************************/
+/*    Começa aqui o Social   */
+/*****************************/
+
+.instagram-chamada{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+	background-color: #98a6ae;
+}
+
+.instagram-chamada p{
+	color: white;
+	line-height: 23px;
+	font-size: 13px;
+	padding: 20px 0;
+}
+
+.mosaico-social{
+	float: left;
+	width: 100%
+}
+
+.single-social{
+	float: left;
+	width: calc(100% / 9);
+	padding-top: calc(100% / 9);
+	background-color: blue;
+	border: 6px solid white;
+}
+
+.facebook-chamada{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+	background-color: #576975;
+}
+
+.facebook-chamada p{
+	color: white;
+	line-height: 23px;
+	font-size: 13px;
+	padding: 20px 0;
+}
+
+/*****************************/
+/*    Começa aqui o Contato  */
+/*****************************/
+
+section.contato{
+	padding: 60px 2%;
+}
+
+section.contato > h2{
+	color: #698293;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+section.contato form{
+	width: 100%;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.form-wrapper{
+	float: left;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+
+.form-wrapper span{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.form-wrapper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wrapper textarea{
+	width: 100%;
+	padding: 15px;
+	height: 121px;
+	resize: none; /* nao permite redimensionamento da text-area */
+	border: 1px solid #dadada;
+}
+
+.form-wrapper input[type=submit]{
+	width: 100px;
+	display: inline-block;
+	height: 35px;
+	border: 0;
+	background: #688293;
+	color: white;
+	cursor: pointer;
+}
+
+/*****************************/
+/*    Começa aqui o Footer   */
+/*****************************/
+
+footer{
+	padding: 40px 2%;
+	background-color: #688293;
+}
+
+footer .container{
+	max-width: 1000px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer-block p{
+	margin-top: 8px;
+	color: white;
+	font-size: 14px;
+}
 
 
 @media screen and (max-width: 768px){
@@ -397,5 +542,35 @@ section.depoimentos .depoimento-single{
 		width: 80%;
 		padding-top: calc(80% * 0.6);
 		border: 5px solid white;
+	}
+}
+
+@media screen and (max-width: 1024px){
+
+	/****** Responsivo ************/
+	/*    Começa aqui o Social   */
+	/*****************************/
+
+	.single-social{
+			width: calc(100% / 6);
+			padding-top: calc(100% / 6);
+		}
+
+		.mosaico-social > div:nth-of-type(1n+7){
+			display: none;
+		}
+
+	/****** Responsivo ************/
+	/*    Começa aqui o Footer    */
+	/******************************/
+
+	footer{
+		text-align: center;
+	}
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+		margin: 30px 0;
 	}
 }
