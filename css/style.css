@@ -331,9 +331,10 @@ section.depoimentos .depoimento-single{
 .single-social{
 	float: left;
 	width: calc(100% / 9);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	padding-top: calc(100% / 9);
-	background-color: blue;
-	border: 6px solid white;
+	border: 3px solid white;
 }
 
 .facebook-chamada{
@@ -425,7 +426,7 @@ section.contato form{
 /*****************************/
 
 footer{
-	padding: 40px 2%;
+	padding: 40px 2% 0 2%;
 	background-color: #688293;
 }
 
@@ -449,6 +450,26 @@ footer .footer-block{
 	color: white;
 	font-size: 14px;
 }
+
+footer .copyright > .container{
+	max-width: none;
+}
+
+footer .copyright{
+	width: 100%;
+	padding: 20px 2%;
+	margin-top: 40px;
+	background-color: #576975;
+	text-align: center;
+	color: white;
+}
+
+
+footer .copyright p {
+	font-weight: 300;
+	font-size: 14px;
+}
+
 
 
 @media screen and (max-width: 768px){
