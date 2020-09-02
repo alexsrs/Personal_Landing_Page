@@ -15,6 +15,49 @@ html, body{
 	margin: 0 auto;
 }
 
+/* slick slide */
+
+.slick-dotted ul{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-slider{
+	height: 500px;
+	max-height: 600px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+} 
+li.slick-active button{
+	background: #688293;
+}
+
+.slick-slide:focus{
+	outline: none;
+}
+
+/* fim do slick slider */
+
 .clear{
 	clear: both;
 }
@@ -154,11 +197,11 @@ section.servicos > .container .box-servicos p{
 /*************************/
 
 section.perfil .container{
-	max-width: 800px;
+	max-width: 1000px;
 }
 
 section.perfil .perfil-wrapper{
-	padding-top: 60%;
+	padding-top: 50%;
 	position: relative;
 }
 
@@ -181,7 +224,7 @@ section.perfil .img-perfil{
 
 section.perfil .texto-perfil{
 	width: 60%;
-	padding: 0 30px;
+	padding: 80px 30px;
 }
 
 section.perfil .texto-perfil h2{
@@ -190,10 +233,11 @@ section.perfil .texto-perfil h2{
 }
 
 section.perfil .texto-perfil p{
-	color: #4b4b4b;
+	color: rgb(190,190,190);
 	font-size: 14px;
 	text-align: justify;
 	margin-top: 8px;
+	line-height: 24px;
 }
 
 /************************/
@@ -228,6 +272,7 @@ section.videos iframe{
 section.tratamentos{
 	background-color: #ffffe6;
 	padding-top: 20px;
+	
 }
 
 section.tratamentos .tratamento-container{
@@ -235,7 +280,7 @@ section.tratamentos .tratamento-container{
 	width: 33.3%;
 }
 
-section.tratamentos .container > h2{
+section.tratamentos > h2{
 	color: #698293;
 	text-align: center;
 	margin-bottom: 16px;
